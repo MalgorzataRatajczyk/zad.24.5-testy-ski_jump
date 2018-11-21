@@ -22,9 +22,9 @@ describe('calculateDistancePoints', () => {
 
     describe('bigHillScore', () => {
         it('should return bigHillScore', () => {
-            const actual = calculateDistancePoints(110, 'big', 120);
+            const actual = calculateDistancePoints(120, 'big', 120);
 
-            const expected = 102;
+            const expected = 120;
 
             assert.equal(actual, expected);
         });

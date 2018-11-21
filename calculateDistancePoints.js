@@ -2,15 +2,15 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
 	
 	if (hillSize === 'normal') {
 		
-		return (kPoint + (distance - kPoint) * 2);
+		return (kPoint + ((distance - kPoint) * 2));
 	}
-	else if (distance === 'big') {
+	if (distance === 'big') {
 		
-		return (kPoint + (distance - kPoint) * 1.8);
+		return (kPoint + ((distance - kPoint) * 1.8));
 	}
-	else if (hillSize === 'mamut') {
+	if (hillSize === 'mamut') {
 		
-		return (kPoint + (distance - kPoint) * 1.2);
+		return (kPoint + ((distance - kPoint) * 1.2));
 	}
 	
 };
